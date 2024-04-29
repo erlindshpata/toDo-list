@@ -1,10 +1,8 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f9ff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,6 +11,109 @@
   }
 }
 
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  gap: 16px;
+}
+.todo-header {
+  margin-top: 50px;
+  color: #5e617c;
+  font-size: xx-large;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.todo-item {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  margin: 12px;
+  justify-content: space-between;
+  padding: 0px 8px;
+  align-items: center;
+}
+.todo-items-parent-div {
+  width: 50%;
+  background-color: #ecedf6;
+  border-radius: 8px;
+}
+
+.check-and-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+}
+.X-button {
+  align-items: center;
+  color: #565656;
+  border: none;
+  border-radius: 4px;
+  background-color: #efefef;
+  width: 24px;
+  height: 24px;
+}
+.X-button:active {
+  background-color: #626ff1;
+}
+.add-task {
+  align-items: flex-start;
+  /* width: 20%; */
+  display: flex;
+
+  width: 50%;
+  /* margin-top: 10px; */
+  justify-content: space-between;
+  /* gap: 8px; */
+}
+.add-task-button {
+  color: #ecedf6;
+  background-color: #626ff1;
+  border-radius: 8px;
+  border: none;
+  font-size: medium;
+  width: 100px;
+  height: 40px;
+}
+.all-button {
+  color: #5c5c65;
+  justify-content: space-between;
+  display: flex;
+  padding: 12px;
+  background-color: #cccedf;
+  border-radius: 8px;
+  border: none;
+  font-size: medium;
+  width: 140px;
+  height: 40px;
+}
+.input {
+  border-radius: 8px;
+  flex: 1;
+  border: 1px solid #5e617c;
+}
+.input:focus {
+  border-color: #626ff1;
+}
+.checkbox {
+  background-color: #626ff1;
+  width: 20px;
+  margin: 0px;
+}
+.delete-edit-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+.text-completed {
+  text-decoration: line-through;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.text-not-completed {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,10 +123,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

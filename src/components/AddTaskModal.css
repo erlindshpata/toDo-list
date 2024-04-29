@@ -1,0 +1,67 @@
+.add-task-modal-div {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+}
+.add-task-table {
+  background-color: white;
+  width: 40vw;
+  height: 28vh;
+  position: relative;
+  border-radius: 8px;
+}
+.close-modal-button {
+  align-items: center;
+  color: #626ff1;
+  border: none;
+  border-radius: 4px;
+  background-color: #efefef;
+  width: 24px;
+  height: 24px;
+  font-size: large;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.add-task-input {
+  background-color: #ecedf6;
+  width: 100%;
+  height: 40px;
+  border: none;
+  font-size: large;
+  border-radius: 8px;
+}
+.task-name-p {
+  color: #5e617c;
+  font-size: large;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 44px;
+  display: flex;
+}
+.add-task-name-div {
+  flex-direction: column;
+  display: flex;
+  align-items: start;
+  padding-inline: 16px;
+  /* background-color: red; */
+  gap: 12px;
+}
+.add-task-button-modal {
+  color: #ecedf6;
+  position: relative;
+  align-self: center;
+  background-color: #626ff1;
+  border-radius: 8px;
+  border: none;
+  font-size: medium;
+  width: 100px;
+  height: 40px;
+}
